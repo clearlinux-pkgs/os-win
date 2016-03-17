@@ -1,11 +1,32 @@
 CHANGES
 =======
 
+0.3.2
+-----
+
+* Deprecate volumeutils v1
+* Instance event listener: ignore exceptions
+* Replace associators with direct queries (part 2)
+* Fix serial console worker blocking Nova
+* Adds Hyper-V Cluster related utils
+* Fixed _winreg OpenKey parameter
+* Bump version to 0.3.2
+
+0.3.1
+-----
+
+* Changes how association classes are treated
+* Fix livemigrationutils wmi connection getter
+* Bump version to 0.3.1
+
 0.3.0
 -----
 
 * Sets BaseUtilsVirt _conn as a property
+* networkutils: change caches to class members
+* Use the retry decorator for methods adding/removing virt res
 * Removes forgotten TODO and __init__
+* Adds networkutils clear_port_sg_acls_cache
 * Bump version to 0.3.0
 
 0.2.3
