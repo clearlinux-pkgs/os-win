@@ -1,6 +1,28 @@
 CHANGES
 =======
 
+0.4.1
+-----
+
+* python3: Fixes vhdutils internal VHDX size
+* Consistently raise exception if port not found
+* Ensure vmutils honors the host argument
+
+0.4.0
+-----
+
+* Sets OsWinBaseTestCase as base class for unit tests
+* Updates the default branch in .gitreview
+* Fixes PyMI compatiblity issue
+* Fixes vmutils take_vm_snapshot method
+* Adds check for VLAN and VSID operations
+* Fix named pipe handler cleanup regression
+* Fixes vmutils get_vm_generation method
+* Improve clusterutils with new pyMI features
+* Ensure namedpipe IO workers clean up handles when stopping
+* switch to post-versioning
+* Bump version to 0.3.3
+
 0.3.2
 -----
 
