@@ -4,16 +4,18 @@
 #
 Name     : os-win
 Version  : 0.4.1
-Release  : 4
+Release  : 5
 URL      : http://tarballs.openstack.org/os-win/os-win-0.4.1.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-0.4.1.tar.gz
 Summary  : Windows / Hyper-V library for OpenStack projects.
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: os-win-python
+BuildRequires : Jinja2
 BuildRequires : Sphinx-python
 BuildRequires : coverage-python
 BuildRequires : discover-python
+BuildRequires : docutils
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : hacking
