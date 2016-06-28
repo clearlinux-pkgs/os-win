@@ -4,7 +4,7 @@
 #
 Name     : os-win
 Version  : 0.4.1
-Release  : 6
+Release  : 7
 URL      : http://tarballs.openstack.org/os-win/os-win-0.4.1.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-0.4.1.tar.gz
 Summary  : Windows / Hyper-V library for OpenStack projects.
