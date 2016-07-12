@@ -1,18 +1,34 @@
 CHANGES
 =======
 
-0.4.1
+1.0.0
 -----
 
+* Fixes loading HGS namespace on early builds of Windows 10
+* Add method for checking whether a share is local
+* Fix disk rescan method
+* Fix event handle leaks
+* Hyper-V: Shielded VMs
+* Updated from global requirements
+* Fix iSCSI initiator utils docstring
+* iSCSI utils: accept rescan_attempts arg in login method
+* Add missing wmi to requirements.txt
+* Updated from global requirements
+* Add method for retrieving local share paths
+* Updated from global requirements
+* Events: use tpool only if thread module is patched
+* Fix event listeners
+* Updated from global requirements
+* Adds missing attribute from get_cpus_info query
+* Fix retrieving VM notes race condition
+* Fix retrieving VHDX block size
+* Updated from global requirements
+* Fix retrieving VM physical disk mapping
+* Copies get_share_capacity_info to diskutils
 * python3: Fixes vhdutils internal VHDX size
 * Consistently raise exception if port not found
 * Ensure vmutils honors the host argument
-
-0.4.0
------
-
 * Sets OsWinBaseTestCase as base class for unit tests
-* Updates the default branch in .gitreview
 * Fixes PyMI compatiblity issue
 * Fixes vmutils take_vm_snapshot method
 * Adds check for VLAN and VSID operations
