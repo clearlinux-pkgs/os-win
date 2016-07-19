@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+1.1.0
+-----
+
+* Updated from global requirements
+* Adds method for returning DNS Zone properties
+* iSCSI tgt utils: remove workaround needed by old WMI lib
+* Add instance job terminate timeout
+* Hyper-V: Added checking secure VMs status
+* Updated from global requirements
+* Properly handle stopping VM jobs
+* Add utils for managing DNS operations
+* Fix for VM's not getting IP due to missing SG rules
+* Updated from global requirements
+
 1.0.0
 -----
 
