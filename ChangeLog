@@ -1,6 +1,39 @@
 CHANGES
 =======
 
+1.2.1
+-----
+
+* Ensure GetLastError gets called in the right thread
+* Retry on opening named pipe failures
+* Handle sporadic iSCSI initiator errors
+* Fix clustered VM migration status polling
+* VM Importing/Exporting
+* Non-clustered VM live migration fix
+* Fix clustered vm live migration
+* Add method for retrieving vm config root dir
+* vmutils: honor host argument
+* Avoid using diskpart for disk rescans
+* Ensure Win32 API calls do not block
+* Update .gitreview for stable/newton
+
+1.2.0
+-----
+
+* TrivialFix: Remove cfg import unused
+* TrivialFix: Remove logging import unused
+* Fix DNS zone serial number retrieval
+* Adds docstrings to the public methods of hostutils and jobutils
+* Updates README.rst
+* Updated from global requirements
+* Refactors wmi exceptions usage
+* Sets parent class for ISCSITargetUtils
+* Removes Windows Server 2008 R2 specific code
+* Resolves flake8 errors
+* Retry failed disk rescans
+* Add public method for destroying planned vms
+* Remove discover from test-requirements
+
 1.1.0
 -----
 
