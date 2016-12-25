@@ -4,7 +4,7 @@
 #
 Name     : os-win
 Version  : 1.2.1
-Release  : 14
+Release  : 15
 URL      : http://tarballs.openstack.org/os-win/os-win-1.2.1.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-1.2.1.tar.gz
 Summary  : Windows / Hyper-V library for OpenStack projects.
@@ -19,6 +19,7 @@ BuildRequires : docutils
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : hacking
+BuildRequires : imagesize-python
 BuildRequires : msgpack-python-python
 BuildRequires : netaddr
 BuildRequires : netifaces-python
