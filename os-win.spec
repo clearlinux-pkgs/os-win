@@ -6,7 +6,7 @@
 #
 Name     : os-win
 Version  : 1.2.1
-Release  : 16
+Release  : 17
 URL      : http://tarballs.openstack.org/os-win/os-win-1.2.1.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-1.2.1.tar.gz
 Source99 : http://tarballs.openstack.org/os-win/os-win-1.2.1.tar.gz.asc
@@ -23,41 +23,12 @@ Requires: oslo.log
 Requires: oslo.service
 Requires: oslo.utils
 Requires: pbr
-BuildRequires : Jinja2
-BuildRequires : Sphinx-python
 BuildRequires : configparser-python
-BuildRequires : coverage-python
-BuildRequires : discover-python
-BuildRequires : docutils
-BuildRequires : enum34-python
-BuildRequires : extras
-BuildRequires : extras-python
-BuildRequires : hacking
-BuildRequires : imagesize-python
-BuildRequires : msgpack-python-python
-BuildRequires : netaddr
-BuildRequires : netifaces-python
-BuildRequires : oslo.serialization-python
-BuildRequires : oslo.service-python
-BuildRequires : oslosphinx-python
-BuildRequires : oslotest-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pyrsistent-python
-BuildRequires : pytest
 BuildRequires : python-dev
-BuildRequires : python-mimeparse-python
 BuildRequires : python3-dev
-BuildRequires : repoze.lru-python
 BuildRequires : setuptools
-BuildRequires : testrepository-python
-BuildRequires : testscenarios
-BuildRequires : tox
-BuildRequires : traceback2-python
-BuildRequires : unittest2-python
-BuildRequires : virtualenv
 
 %description
 ======
@@ -81,12 +52,12 @@ python components for the os-win package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489035460
+export SOURCE_DATE_EPOCH=1489282402
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1489035460
+export SOURCE_DATE_EPOCH=1489282402
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
