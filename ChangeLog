@@ -1,21 +1,61 @@
 CHANGES
 =======
 
-1.2.1
+1.4.1
 -----
 
+* pathutils: Adds retry decorator to rmdir
+* vmutils: Adds vnuma_enabled argument to update_vm
+* vmutils: Allows updating and disabling instance RemoteFX
+* vmutils: Adds remove_all_pci_devices method
+* removes the VirtualSystemType kwarg when fetching VMs
+* vmutils: set all *DataRoot paths to the same value
+* Update UPPER_CONSTRAINTS_FILE for stable/ocata
+* Update .gitreview for stable/ocata
+
+1.4.0
+-----
+
+* Adds Hyper-V PCI Passthrough support
+* Rename argument in iscsi_utils, breaking os-brick
+* Implements qos methods in networkutils
+* Allow setting automatic vm shutdown action
+
+1.3.0
+-----
+
+* Add hbaapi path config option
+* Adds nested virtualization support
+* use unpatched socket module to get addresses
+* FibreChannel: ignore unsupported HBA adapters
+* Add Constraints support
+* Use assertEqual() instead of assertDictEqual()
+* Adds VLAN trunk mode support
+* Updated from global requirements
+* Pin docutils version
+* Avoid opening parents when fetching VHD info
+* Changed author and author-email
+* Show team and repo badges on README
+* Removes unnecessary oslo.service requirement
+* Removes all references to openstack.common
+* Updated from global requirements
+* Fix iscsi volumes not being attached
+* Updated from global requirements
+* Updated from global requirements
+* Move unit tests to a separate folder
+* Add methods for handling file ACLs
 * Ensure GetLastError gets called in the right thread
 * Retry on opening named pipe failures
-* Handle sporadic iSCSI initiator errors
 * Fix clustered VM migration status polling
+* Updated from global requirements
+* Handle sporadic iSCSI initiator errors
 * VM Importing/Exporting
-* Non-clustered VM live migration fix
-* Fix clustered vm live migration
-* Add method for retrieving vm config root dir
-* vmutils: honor host argument
-* Avoid using diskpart for disk rescans
 * Ensure Win32 API calls do not block
-* Update .gitreview for stable/newton
+* Avoid using diskpart for disk rescans
+* vmutils: honor host argument
+* Add method for retrieving vm config root dir
+* Fix clustered vm live migration
+* Non-clustered VM live migration fix
 
 1.2.0
 -----
