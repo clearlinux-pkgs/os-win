@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+2.0.1
+-----
+
+* networkutils: specializes the exception raised by _get_vnic_settings
+* Updated from global requirements
+* Add cluster vm owner change listener
+* pep8: fixes indentation issues
+* Remove log translations
+* Optimize the link address
+* Replacing six.iteritems() with .items()
+* Updated from global requirements
+* Fix share local address check
+
 2.0.0
 -----
 
