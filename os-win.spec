@@ -6,7 +6,7 @@
 #
 Name     : os-win
 Version  : 2.0.1
-Release  : 21
+Release  : 22
 URL      : http://tarballs.openstack.org/os-win/os-win-2.0.1.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-2.0.1.tar.gz
 Source99 : http://tarballs.openstack.org/os-win/os-win-2.0.1.tar.gz.asc
