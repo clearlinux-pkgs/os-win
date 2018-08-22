@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+4.0.1
+-----
+
+* uncap eventlet
+* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
+* Update .gitreview for stable/rocky
+
 4.0.0
 -----
 
