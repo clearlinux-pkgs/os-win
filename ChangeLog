@@ -1,12 +1,28 @@
 CHANGES
 =======
 
-4.0.1
+4.1.0
 -----
 
+* Ignore events for unnamed VM vNICs
+* Add getter for MemorySettingsData
+* Allow enabling metrics per virtual disk
+* Add method for retrieving VM nics
+* Fix port metrics
+* Fix incorrect numeric comparisons
+* Add wmi job terminate timeout cfg opt
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Updated from global requirements
+* Update reno for stable/rocky
+* Add release note link in README
+* fix tox python3 overrides
 * uncap eventlet
-* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
-* Update .gitreview for stable/rocky
+* add lower-constraints job
+* Updated from global requirements
+* Update links in README
+* Removing pypy
 
 4.0.0
 -----
