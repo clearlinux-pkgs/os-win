@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+4.1.1
+-----
+
+* Limit Failover Cluster WMI provider usage
+
 4.1.0
 -----
 
