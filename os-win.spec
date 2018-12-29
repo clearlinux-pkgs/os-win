@@ -6,7 +6,7 @@
 #
 Name     : os-win
 Version  : 4.1.1
-Release  : 26
+Release  : 27
 URL      : http://tarballs.openstack.org/os-win/os-win-4.1.1.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-4.1.1.tar.gz
 Source99 : http://tarballs.openstack.org/os-win/os-win-4.1.1.tar.gz.asc
