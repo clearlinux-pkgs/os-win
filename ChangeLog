@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+4.2.0
+-----
+
+* Cleanup utilsfactory map
+* Add pipe helpers
+* Silently continue when disconnecting missing vhds
+* Use template for lower-constraints
+* Change openstack-dev to openstack-discuss
+* Logging multiple WMI job errors
+* Disable wmi object caching by default
+* Trivial: Fix flaky unit test
+
 4.1.1
 -----
 
