@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+4.3.0
+-----
+
+* Replace git.openstack.org URLs with opendev.org URLs
+* OpenDev Migration Patch
+* Dropping the py35 testing
+* Update master for stable/stein
+* Update hacking version
+* add python 3.7 unit test job
+* Replace testrepository with stestr
+* Add mutex class
+
 4.2.0
 -----
 

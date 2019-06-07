@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : os-win
-Version  : 4.2.0
-Release  : 29
-URL      : http://tarballs.openstack.org/os-win/os-win-4.2.0.tar.gz
-Source0  : http://tarballs.openstack.org/os-win/os-win-4.2.0.tar.gz
-Source99 : http://tarballs.openstack.org/os-win/os-win-4.2.0.tar.gz.asc
+Version  : 4.3.0
+Release  : 30
+URL      : http://tarballs.openstack.org/os-win/os-win-4.3.0.tar.gz
+Source0  : http://tarballs.openstack.org/os-win/os-win-4.3.0.tar.gz
+Source99 : http://tarballs.openstack.org/os-win/os-win-4.3.0.tar.gz.asc
 Summary  : Windows / Hyper-V library for OpenStack projects.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -24,7 +24,14 @@ Requires: oslo.i18n
 Requires: oslo.log
 Requires: oslo.utils
 Requires: pbr
+BuildRequires : Babel
 BuildRequires : buildreq-distutils3
+BuildRequires : eventlet
+BuildRequires : oslo.concurrency
+BuildRequires : oslo.config
+BuildRequires : oslo.i18n
+BuildRequires : oslo.log
+BuildRequires : oslo.utils
 BuildRequires : pbr
 
 %description
@@ -61,18 +68,26 @@ python3 components for the os-win package.
 
 
 %prep
-%setup -q -n os-win-4.2.0
+%setup -q -n os-win-4.3.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548115954
+export SOURCE_DATE_EPOCH=1559920400
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
+export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/os-win
 cp LICENSE %{buildroot}/usr/share/package-licenses/os-win/LICENSE
