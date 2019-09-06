@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+4.3.1
+-----
+
+* Update and replace http with https for doc links
+* Fix VHD detach
+* Add Python 3 Train unit tests
+
 4.3.0
 -----
 
