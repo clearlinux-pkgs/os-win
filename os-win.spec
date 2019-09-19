@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xFC43F0EE211DFED8 (infra-root@openstack.org)
 #
 Name     : os-win
-Version  : 4.3.1
-Release  : 32
-URL      : http://tarballs.openstack.org/os-win/os-win-4.3.1.tar.gz
-Source0  : http://tarballs.openstack.org/os-win/os-win-4.3.1.tar.gz
-Source1 : http://tarballs.openstack.org/os-win/os-win-4.3.1.tar.gz.asc
+Version  : 4.3.2
+Release  : 33
+URL      : http://tarballs.openstack.org/os-win/os-win-4.3.2.tar.gz
+Source0  : http://tarballs.openstack.org/os-win/os-win-4.3.2.tar.gz
+Source1 : http://tarballs.openstack.org/os-win/os-win-4.3.2.tar.gz.asc
 Summary  : Windows / Hyper-V library for OpenStack projects.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -68,14 +68,14 @@ python3 components for the os-win package.
 
 
 %prep
-%setup -q -n os-win-4.3.1
+%setup -q -n os-win-4.3.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1567736296
+export SOURCE_DATE_EPOCH=1568871098
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
