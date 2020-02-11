@@ -1,12 +1,12 @@
 CHANGES
 =======
 
-4.3.2
+5.0.0
 -----
 
+* Drop python 2.7 support and testing
+* Update master for stable/train
 * Wait for cluster node to be available
-* Update TOX/UPPER\_CONSTRAINTS\_FILE for stable/train
-* Update .gitreview for stable/train
 
 4.3.1
 -----
