@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+5.0.1
+-----
+
+* Fix Windows support for the unit tests
+* Trivial: Fix test\_get\_cluster\_group\_type on x86 or Win32
+* Add configurable timeout for in-use files
+
 5.0.0
 -----
 
