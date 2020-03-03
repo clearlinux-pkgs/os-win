@@ -6,7 +6,7 @@
 #
 Name     : os-win
 Version  : 5.0.1
-Release  : 37
+Release  : 38
 URL      : http://tarballs.openstack.org/os-win/os-win-5.0.1.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-5.0.1.tar.gz
 Source1  : http://tarballs.openstack.org/os-win/os-win-5.0.1.tar.gz.asc
@@ -165,7 +165,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582910403
+export SOURCE_DATE_EPOCH=1583195931
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
