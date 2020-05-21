@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+5.0.2
+-----
+
+* Fix case sensitive path comparisons
+* Update TOX/UPPER\_CONSTRAINTS\_FILE for stable/ussuri
+* Update .gitreview for stable/ussuri
+
 5.0.1
 -----
 

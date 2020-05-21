@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : os-win
-Version  : 5.0.1
-Release  : 39
-URL      : http://tarballs.openstack.org/os-win/os-win-5.0.1.tar.gz
-Source0  : http://tarballs.openstack.org/os-win/os-win-5.0.1.tar.gz
-Source1  : http://tarballs.openstack.org/os-win/os-win-5.0.1.tar.gz.asc
+Version  : 5.0.2
+Release  : 40
+URL      : http://tarballs.openstack.org/os-win/os-win-5.0.2.tar.gz
+Source0  : http://tarballs.openstack.org/os-win/os-win-5.0.2.tar.gz
+Source1  : http://tarballs.openstack.org/os-win/os-win-5.0.2.tar.gz.asc
 Summary  : Windows / Hyper-V library for OpenStack projects.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -74,22 +74,22 @@ python3 components for the os-win package.
 
 
 %prep
-%setup -q -n os-win-5.0.1
-cd %{_builddir}/os-win-5.0.1
+%setup -q -n os-win-5.0.2
+cd %{_builddir}/os-win-5.0.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583538755
+export SOURCE_DATE_EPOCH=1590085287
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
@@ -98,7 +98,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/os-win
-cp %{_builddir}/os-win-5.0.1/LICENSE %{buildroot}/usr/share/package-licenses/os-win/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/os-win-5.0.2/LICENSE %{buildroot}/usr/share/package-licenses/os-win/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
