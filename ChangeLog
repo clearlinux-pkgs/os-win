@@ -1,12 +1,23 @@
 CHANGES
 =======
 
-5.0.2
+5.1.0
 -----
 
+* drop mock from lower-constraints
+* Switch to newer openstackdocstheme and reno versions
+* Fix hacking min version to 3.0.1
 * Fix case sensitive path comparisons
-* Update TOX/UPPER\_CONSTRAINTS\_FILE for stable/ussuri
-* Update .gitreview for stable/ussuri
+* Remove translation sections from setup.cfg
+* Remove monotonic usage
+* Bump default tox env from py37 to py38
+* Add py38 package metadata
+* Use unittest.mock instead of third party mock
+* Cleanup py27 support
+* Update hacking for Python3
+* Add Python3 victoria unit tests
+* Update master for stable/ussuri
+* Ussuri contributor docs community goal
 
 5.0.1
 -----
