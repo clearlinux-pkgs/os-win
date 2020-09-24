@@ -6,7 +6,7 @@
 #
 Name     : os-win
 Version  : 5.1.0
-Release  : 41
+Release  : 42
 URL      : http://tarballs.openstack.org/os-win/os-win-5.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/os-win/os-win-5.1.0.tar.gz
 Source1  : http://tarballs.openstack.org/os-win/os-win-5.1.0.tar.gz.asc
